@@ -1,0 +1,348 @@
+/* Font connection */
+
+@font-face {
+    font-family: "Gotha Pro";
+    src: url("../fonts/GothaProBla.otf") format("opentype"),
+        url("../fonts/GothaProBol.otf") format("opentype"),
+        url("../fonts/GothaProReg.otf") format("opentype");
+}
+
+/* Specification */
+body {
+    font-family: 'Gotha Pro', sans-serif;
+    color: #fff;
+    font-style: italic;
+    background: url(../img/bg.png) no-repeat center top / cover;
+    height: 100%;
+}
+
+div,
+p,
+a,
+span,
+input,
+button {
+    box-sizing: border-box;
+}
+
+.btn {
+    font-size: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    background: #f3c34d;
+    padding: 18px 55px;
+    color: #242426;
+    cursor: pointer;
+    background: #eaa91d;
+    /*цвет фона кнопки для браузеров без поддержки CSS3*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9d56d), to(#fcac01));
+    /* для Webkit браузеров */
+    background: -moz-linear-gradient(top, #f9d56d, #fcac01);
+    /* для Firefox */
+    background-image: -o-linear-gradient(top, #f9d56d, #fcac01);
+    /* для Opera 11 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    /* фильтр для IE */
+}
+
+.btn:hover {
+    -webkit-animation: 0.3s tremor ease-out infinite;
+    animation: 0.4s tremor ease-out infinite;
+}
+
+.main {
+    /* height: 100vh; */
+    height: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*header section*/
+.header {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #697579;
+    padding: 27px 0px;
+}
+
+.nav__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px black;
+}
+
+.nav__title span {
+    color: #00d15d;
+}
+
+/* Main content */
+.main__section {
+    position: relative;
+}
+
+.shadow-content__more {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    top: 55%;
+    left: -132px;
+    background: rgb(73, 67, 67);
+    background: linear-gradient(90deg, rgba(73, 67, 67, 1) 9%, rgba(0, 0, 0, 1) 31%, rgba(0, 0, 0, 1) 100%);
+    opacity: 0.35;
+}
+
+.content {
+    max-width: 100%;
+    position: relative;
+    margin-top: 25px;
+}
+
+.content__title {
+    font-size: 118px;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    position: relative;
+    left: -5px;
+    text-shadow: 0px 1px 3px black;
+}
+
+.content__percent {
+    position: relative;
+    left: -23px;
+    font-size: 158px;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    background: linear-gradient(to top, #00bf39, #00d768);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #00bf39;
+}
+
+.content__desc {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-shadow: 0px 1px 3px black;
+}
+
+.content__more {
+    font-size: 26px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
+    margin: 50px 0;
+}
+
+.content__more span {
+    letter-spacing: 0.09em;
+    color: #00d15d;
+}
+
+.content__button {
+    margin-bottom: 65px;
+}
+
+.main__right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 10%;
+    top: 0;
+}
+
+/* Agitation section */
+.agitation {
+    background: url("../img/bg2.png") center / cover;
+    padding: 30px 0;
+}
+
+.agitation__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.agitation__content-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 335px;
+    margin-left: 20px;
+}
+
+.item__circle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    z-index: 3;
+    left: 30px;
+}
+
+.item__circle-second {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.circ-1 {
+    background: #3f723d;
+}
+
+.circ-2 {
+    background: #3a9937;
+}
+
+.circ-3 {
+    background: #398b36;
+}
+
+.item__circle-number {
+    color: #ffc539;
+    font-size: 56px;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.agitation__text {
+    font-size: 21px;
+    text-transform: uppercase;
+    width: 260px;
+    padding: 18px 0px;
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 20px;
+    right: 0;
+}
+
+.text-1 {
+    background: linear-gradient(to right, #1a5e17, #398936);
+}
+
+.text-2 {
+    background: linear-gradient(to right, #1f8b1c, #3b9c36);
+}
+
+.text-3 {
+    background: linear-gradient(to right, #216d1f, #366535);
+}
+
+.agitation__text:first-child {
+    font-size: 30px;
+    background: linear-gradient(to right, #1c611a 25%, green 75%);
+}
+
+.agitation__arrow {
+    position: relative;
+    width: 60px;
+    height: 20px;
+    margin: 0px 20px;
+}
+
+.agitation__arrow-right {
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    align-items: center;
+    animation: 1s ease 0s pulse infinite;
+
+}
+
+.agitation__arrow-right:nth-child(1) {
+    left: 0px;
+    border-width: 0 3px 3px 0 !important;
+    animation: blink-animation 1s steps(3, start) infinite;
+    -webkit-animation: blink-animation 1s steps(3, start) infinite;
+    border-color: #53a150;
+}
+
+.agitation__arrow-right:nth-child(2) {
+    left: 10px;
+    border-width: 0 3px 3px 0 !important;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    border-color: #84bb82;
+}
+
+.agitation__arrow-right:nth-child(3) {
+    left: 20px;
+    border-width: 0 3px 3px 0 !important;
+    animation: blink-animation 1s steps(7, start) infinite;
+    -webkit-animation: blink-animation 1s steps(7, start) infinite;
+    border-color: #b4d6b2;
+}
+
+/* Advantages section */
+.advatages__items {
+    margin: 40px 0px;
+    display: flex;
+
+}
+
+.advantages__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 215px;
+    font-size: 13px;
+    background: #262626;
+    padding: 17px 0;
+    border-radius: 10px;
+    line-height: 1.3em;
+    margin-right: 5px;
+}
+
+.advantages__item img {
+    margin-left: 10px;
+}
+
+.advantage__item-text {
+    margin-right: 10px;
+}
+
+/* Banks */
+.banks {
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
+
+.banks__item {
+    padding: 30px 0px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Footer */
+.footer__copy {
+    text-align: center;
+    font-size: 11px;
+    color: #202020;
+    text-transform: uppercase;
+    padding: 28px 0;
+}

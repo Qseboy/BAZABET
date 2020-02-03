@@ -1,0 +1,378 @@
+@media screen and (max-width: 4000px) {
+    body {
+        background: url(../img/bg.png) no-repeat center center / cover;
+    }
+
+    .main__section .players {
+        top: 50%;
+    }
+
+    .players .players__left {
+        margin-left: -420px;
+    }
+
+    .players .players__right {
+        margin-right: -420px;
+    }
+
+}
+
+/* 1601 - 1920px */
+@media screen and (max-width: 1920px) {
+    .players .players__left {
+        margin-left: -390px;
+    }
+
+    .players .players__right {
+        right: -20%;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        margin-right: 0px;
+    }
+
+    .players .players__right img {
+        position: absolute;
+    }
+
+    .players .players__right img:last-child {
+        left: 30%;
+        top: 10%;
+    }
+}
+
+/* 1369 - 1600px */
+@media screen and (max-width: 1600px) {
+    .players__left {
+        display: none;
+    }
+
+    .players__right {
+        display: none;
+    }
+}
+
+/* 960px - 1368x */
+@media screen and (max-width: 1368px) {
+    body {
+        background: url(../img/bg.png) no-repeat center top;
+    }
+
+    .advantages {
+        background: black;
+    }
+
+    .footer {
+        background: black;
+    }
+
+    .main__player img {
+        width: 80%;
+    }
+
+    .main__truck {
+        top: 20%;
+    }
+
+    .main__truck img {
+        width: 580px;
+    }
+
+    .main__money img {
+        width: 500px;
+    }
+
+    .main__right .main__money {
+        left: 55%;
+        animation: 4s linear 0s infinite alternate move_money;
+        position: relative;
+    }
+
+    .agitation .agitation__content {
+        flex-direction: column;
+    }
+
+    .agitation__arrow {
+        transform: rotate(90deg);
+        margin-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .agitation__content .agitation__content-item {
+        margin-left: -20px;
+    }
+
+    .text-1,
+    .text-3 {
+        background: linear-gradient(to right, #1f8b1c, #3b9c36);
+    }
+
+    .circ-1 {
+        background: #3a9937;
+    }
+
+}
+
+/* 768px - 960px */
+@media screen and (max-width: 960px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .main__section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content__desc {
+        margin-bottom: 50px;
+    }
+
+    .advatages__items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantages__item {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .advatages__items .advantages__item .advantage__item-text br {
+        display: none;
+    }
+
+    .agitation__arrow {
+        margin-left: 70px;
+    }
+
+    .main__right {
+        position: relative;
+        height: 300px;
+        order: 1;
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
+
+    .content .main__player {
+        top: 0;
+        left: -8%;
+    }
+
+    .content .main__truck {
+        text-align: center;
+        top: -10%;
+        left: 0;
+        position: initial;
+    }
+
+    .main__truck img {
+        width: auto;
+        max-width: 500px;
+    }
+
+    .main__right .main__money {
+        left: 50%;
+        animation: 4s linear 0s infinite alternate move_money_960px;
+        z-index: 2;
+    }
+
+    .main__right .main__money img {
+        width: 50%;
+    }
+
+    .content__more {
+        order: 2;
+        text-align: center;
+    }
+
+    .content__button {
+        order: 2;
+    }
+
+    .shadow-content__more {
+        width: 443px;
+        top: 74%;
+        left: 0px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .banks__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantages {
+        background: black;
+    }
+
+    .footer {
+        background: black;
+    }
+
+    .advatages__items {
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    .advantages__item:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/* 480px - 768px */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    .nav__title {
+        display: none;
+    }
+}
+
+/* 320 - 480px */
+@media screen and (max-width: 480px) {
+    body {
+        background: url(../img/bg-mobile.png) no-repeat center center / cover;
+    }
+
+    .shadow-content__more {
+        display: none;
+    }
+
+    .logo {
+        height: 18px;
+    }
+
+    nav {
+        justify-content: center;
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .nav__title {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .content .content__title {
+        font-size: 49px;
+        left: 0;
+    }
+
+    .content__percent {
+        font-size: 69px;
+        left: 0;
+    }
+
+    .content__desc {
+        font-size: 20px;
+    }
+
+    .content__desc {
+        font-size: 15px;
+        margin: 10px 0;
+
+    }
+
+    .main__money {
+        width: 300px;
+    }
+
+    .main__right .main__money {
+        left: 50%;
+    }
+
+    .content .main__player {
+        margin-left: -30px;
+        top: 30%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main__player img {
+        max-height: 159px;
+        max-width: 169px;
+    }
+
+    .content .main__truck {
+        top: 0%;
+        left: 3%;
+    }
+
+    .content .main__truck:hover {
+        transform: none;
+    }
+
+    .main__truck img {
+        max-height: 200px;
+        max-width: 308px;
+    }
+
+    .main__money img {
+        max-width: 300px;
+    }
+
+    .main__right {
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .content .main__player {
+        left: 0%;
+    }
+
+    .content__more {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .btn {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .advantages__item {
+        width: 290px;
+        margin-bottom: 20px;
+    }
+
+    .advatages__items .advantages__item .advantage__item-text br {
+        display: block;
+    }
+
+    .agitation {
+        padding: 10px 0;
+    }
+
+    .agitation__arrow {
+        display: none;
+    }
+
+    .agitation__content .agitation__content-item {
+        margin-bottom: 20px;
+    }
+
+    .agitation__content .agit-fix {
+        margin-bottom: 0px;
+    }
+}

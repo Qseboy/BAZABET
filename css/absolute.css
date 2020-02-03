@@ -1,0 +1,85 @@
+/* Players*/
+.players {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.players img {
+    position: inherit;
+    transition: all 0.3s ease;
+}
+
+.players__left {
+    margin-left: -390px;
+}
+
+.players__right {
+    margin-right: -390px;
+    z-index: 6;
+}
+
+.players__left img:nth-child(1):hover {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.players__left img:nth-child(2):hover {
+    -webkit-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.players__right img:nth-child(1):hover {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.players__right img:nth-child(2):hover {
+    -webkit-transform: translateX(-13px);
+    transform: translateX(-13px);
+}
+
+/* Player */
+.main__player {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    z-index: 5;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.main__player:hover {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+}
+
+/* Truck */
+.main__truck {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 4;
+    transition: all 0.5s ease;
+}
+
+.main__truck:hover {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* money */
+.main__money {
+    position: absolute;
+    top: -170px;
+    left: 90%;
+    z-index: 2;
+    offset-rotate: auto 90deg;
+    animation-direction: normal;
+    animation: money-fly 11s infinite linear;
+    offset-path: path('M 0,0 Q 0,300 0,300 Q 0,0 0,0 Q 0,0 0,0');
+}
