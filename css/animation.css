@@ -1,0 +1,147 @@
+@-webkit-keyframes tremor {
+
+    0%,
+    25% {
+        left: -1px;
+        top: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+
+    50%,
+    100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+
+@-webkit-keyframes tremor {
+
+    0%,
+    25% {
+        left: -1px;
+        top: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+
+    50%,
+    100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+
+@-moz-keyframes tremor {
+
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+
+@-ms-keyframes tremor {
+
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+
+@-o-keyframes tremor {
+
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+
+@keyframes tremor {
+
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+
+/* money */
+@keyframes money-fly {
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+/* arrow blink */
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+/* test */
+@-webkit-keyframes move_money {
+    from {
+        margin-top: 40%;
+    }
+
+    to {
+        margin-top: 80%;
+    }
+}
+
+@-webkit-keyframes move_money_960px {
+    from {
+        margin-top: -30%;
+    }
+
+    to {
+        margin-top: -10%;
+    }
+}
